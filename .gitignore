@@ -1,0 +1,8 @@
+*.class
+*.war
+*.ear
+*.jar
+javaCandy/.classpath
+javaCandy/.project
+javaCandy/.settings/*
+javaCandy/target/*
