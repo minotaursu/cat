@@ -16,8 +16,12 @@ public class EightQueen {
 			a[i]=-1;
 		}
 		putQueen(a,0);
-		System.out.println(count);
 	}
+	
+	public int queenCount(){
+		return count;
+	}
+	
 	public void putQueen(int[] a,int line){
 		if(line==NUM){
 			for(int i=0;i<a.length;i++){
