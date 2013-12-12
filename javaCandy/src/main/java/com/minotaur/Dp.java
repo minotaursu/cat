@@ -1,6 +1,7 @@
 package com.minotaur;
 
 public class Dp {
+	public int ii=0;
 
 	public int sumSeque(int[] a){
 		int len=a.length;
@@ -9,7 +10,7 @@ public class Dp {
 		for(int i=0;i<len;i++){
 			d[i]=1;
 			for(int j=0;j<i;j++){
-				//a[j]<a[i]条件下找出最大的d[j]
+				//a[j]<a[i] find the smallest d[j]
 				if(a[j]<=a[i]&&d[j]+1>d[i]){
 					d[i]=d[j]+1;
 				}
@@ -21,6 +22,20 @@ public class Dp {
 		return ll;
 	}
 	
+	public void sum(){
+		if((ii^100)==0){
+			return;
+		}
+		ii++;
+		sum();
+	}
+	
+	
+	public static void main(String[] args){
+		Dp dp=new Dp();
+		dp.sum();
+		System.out.println(dp.ii);
+	}
 /**
  * fatal error
  */

@@ -1,5 +1,7 @@
 package com.minotaur;
 
+import static org.junit.Assert.*;
+
 import java.util.Random;
 
 import org.junit.Before;
@@ -10,7 +12,7 @@ public class SequenceTest {
 
 	private Dp dp;
 	
-	private final static int NUM=39999;
+	private final static int NUM=399;
 	
 	private static int[] a=new int[NUM];
 
@@ -35,4 +37,9 @@ public class SequenceTest {
 		System.out.println("len:"+len+"\ttime:"+(e-b));
 	}
 
+	@Test
+	public void testRule1() {
+		dp.sum();
+		assertEquals(100,dp.ii);
+	}
 }
