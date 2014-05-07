@@ -8,7 +8,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-//HashMap ÊÇ²»¿¿Æ×µÄ
 public class MapAtomicTest {
 	
 	public void doThreadMap(final Map<Integer,String> map) throws InterruptedException{
@@ -40,9 +39,6 @@ public class MapAtomicTest {
 		}
 		es.shutdown();
 		while(es.awaitTermination(1L, TimeUnit.SECONDS)){
-//			for(Entry<Integer,String> entry:map.entrySet()){
-//				System.out.println(entry.getKey());
-//			}
 			System.out.println(map.size());
 			return;
 		}

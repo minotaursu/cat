@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd
+http://www.w3.org/2001/XMLSchema-instance ">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.minotaur</groupId>
     <artifactId>javaCandy</artifactId>
@@ -21,12 +23,12 @@
             <name>xu su</name>
             <email>minotaursu@gmail.com</email>
         </developer>
-     </developers>       
+    </developers>
     <scm>
         <connection>scm:git:git://github.com/minotaursu/cat.git</connection>
         <url>git://github.com/minotaursu/cat.git</url>
     </scm>
-    
+
     <dependencies>
         <dependency>
             <groupId>commons-logging</groupId>
@@ -39,7 +41,7 @@
             <version>4.11</version>
         </dependency>
     </dependencies>
-    
+
     <build>
         <plugins>
             <plugin>

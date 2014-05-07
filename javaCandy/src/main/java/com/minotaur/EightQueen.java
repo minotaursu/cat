@@ -24,9 +24,9 @@ public class EightQueen {
 	
 	public void putQueen(int[] a,int line){
 		if(line==NUM){
-			for(int i=0;i<a.length;i++){
-				System.out.print(a[i]+" ");
-			}
+            for (int anA : a) {
+                System.out.print(anA + " ");
+            }
 			System.out.println();
 			count++;
 		}else{
