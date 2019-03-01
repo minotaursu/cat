@@ -1,8 +1,42 @@
+.gitignore for java
 *.class
+
+#OSX
+*.DS_Store
+
+# Package Files #
+*.jar
 *.war
 *.ear
-*.jar
-javaCandy/.classpath
-javaCandy/.project
-javaCandy/.settings/*
-javaCandy/target/*
+**/target/
+**/$HOME/
+
+# logs
+/stacktrace.log
+/test/reports
+/logs
+*.log
+*.log.*
+
+## .gitignore for intellij
+*.iml
+*.ipr
+*.iws
+.idea/
+
+## .gitignore for eclipse
+*.pydevproject
+.project
+.metadata
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+/.project
